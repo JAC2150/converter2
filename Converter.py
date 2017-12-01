@@ -23,6 +23,8 @@ while True:
                 final = temp * 9/5 + 32
                 final = round(final,2)
                 print ("The temperature is equal to {} Ferienhiet.".format(final))
+            else:
+                print("Invalid entry.")
 
         elif choice == 2:
             os.system('clear')
@@ -40,6 +42,8 @@ while True:
                 final = (value / 10.09)
                 final = round(final,2)
                 print ("The Currency is equal to {} Dollars.".format(final))
+            else:
+                print("Invalid entry.")
 
         elif choice == 3:
             os.system('clear')
@@ -57,6 +61,8 @@ while True:
                 final = value / 1.60934
                 final = round(final,2)
                 print ("The Distance is equal to {} Miles.".format(final))
+            else:
+                print("Invalid entry.")
 
         elif choice == 4:
             os.system('clear')
@@ -65,8 +71,9 @@ while True:
             conversion = int(input ("\nConverion: "))
             os.system('clear')
             if conversion == 1:
+ 
                 value = float(input ("Enter the Distance in Inches: "))
-                final = vaule * 2.54
+                final = value * 2.54
                 final = round(final,2)
                 print ("The Distance is equal to {} Centimeters.".format(final))
             elif conversion == 2:
@@ -74,5 +81,6 @@ while True:
                 final = value / 2.54
                 final = round(final,2)
                 print ("The Distance is equal to {} Inches.".format(final))
-
-        input ("Invalid entry. Please prees ENTER to try again.")
+            else:
+                print("Invalid entry.")
+        input("\nPress ENTER to try again.")
